@@ -1,18 +1,13 @@
-import React from 'react';
+// import React from 'react';
+// const  Card = ({values}) => {
+//     return(
+//     <div>
+//       <h3>{values.title}</h3>
+//       <p>Description: {values.description}</p>
+//       <p>Ratings: {values.ratings}</p>
+//       <img src={values.url} alt="Image" />
+//     </div>)
 
-function Input({ label, name, type, placeholder }) {
-  return (
-    <div>
-      <label>
-        {label}
-        <input
-          name={name}
-          type={type}
-          placeholder={placeholder}
-        />
-      </label>
-    </div>
-  );
-}
+// }
 
-export default Input;
+// export default Card;

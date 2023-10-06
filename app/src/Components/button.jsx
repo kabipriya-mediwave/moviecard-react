@@ -9,6 +9,4 @@ function Button({ name, type, onClick }) {
     </div>
   );
 }
-
-
 export default Button;
