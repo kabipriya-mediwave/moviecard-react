@@ -16,7 +16,7 @@ function App() {
     ratings: Yup.number().required('Ratings is required').max(10,"Rating cannot be greater than 10"),
     url: Yup.string().url('Enter a valid URL').required('URL is required'),
   });
-  const [cardInfo, setCardInfo] = useState(null);
+  const [CardInfo, setCardInfo] = useState([]);
   const handleSubmit = (values, { resetForm }) => {
     console.log(values);
     const cardContent = (
@@ -27,7 +27,7 @@ function App() {
         <img src={values.url} alt="Image" />
       </div>
     );
-    setCardInfo(cardContent);
+    setCardInfo([...CardInfo,cardContent]);
     resetForm();
   };
   return (
@@ -92,7 +92,7 @@ function App() {
         )}
       </Formik>
       <div className="total-card">
-      {cardInfo}
+      {CardInfo}
       </div>
     </div>
   );
